@@ -9,6 +9,14 @@ let button = document.getElementById('do-it');
 let dropdownMenu = document.querySelector('.dropdown-menu');
 let dropdownContent = document.querySelectorAll('.dropdown-content');
 let barClick = 0;
+function updateYear(){
+    let startingYear = document.getElementById('starting-year');
+    startingYear.textContent = '2019';
+    let currentYear = document.getElementById('current-year');
+    let currentDate = new Date();
+    currentYear.textContent = currentDate.getFullYear();
+} 
+updateYear();
 bar.addEventListener('click', showMenu);
 learnMoreLink.addEventListener('click', showAbout);
 educationLink.addEventListener('click', showEducation);
