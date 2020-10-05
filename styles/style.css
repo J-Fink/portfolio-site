@@ -76,6 +76,7 @@ li {
     color: white;
     cursor: pointer;
     margin-left: 1vw;
+    margin-right: 1vw;
 }
 .dropdown-content:hover {
     color: white;
